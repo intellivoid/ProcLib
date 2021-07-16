@@ -1,4 +1,4 @@
-name: PPM Compile ProcLibb
+name: PPM Compile ProcLib
 
 on:
   push:
@@ -29,9 +29,9 @@ jobs:
       - name: Make build directory
         run: mkdir build
 
-      - name: Prepare ProcLibb
+      - name: Prepare ProcLib
         run: ppm --generate-package="src/ProcLib"
-      - name: Compile ProcLibb
+      - name: Compile ProcLib
         run: ppm --no-intro --verbose --compile="src/ProcLib" --directory="build"
-      - name: Install ProcLibb
+      - name: Install ProcLib
         run: sudo -H ppm --no-prompt --fix-conflict --verbose --install="build/net.intellivoid.proclib.ppm"

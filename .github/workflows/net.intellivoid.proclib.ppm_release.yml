@@ -1,4 +1,4 @@
-name: PPM Release ProcLibb
+name: PPM Release ProcLib
 
 on:
   push:
@@ -29,11 +29,11 @@ jobs:
       - name: Make build directory
         run: mkdir build
 
-      - name: Prepare ProcLibb
+      - name: Prepare ProcLib
         run: ppm --generate-package="src/ProcLib"
-      - name: Compile ProcLibb
+      - name: Compile ProcLib
         run: ppm --no-intro --verbose --compile="src/ProcLib" --directory="build"
-      - name: Install ProcLibb
+      - name: Install ProcLib
         run: sudo -H ppm --no-prompt --fix-conflict --verbose --install="build/net.intellivoid.proclib.ppm"
 
       - name: Get Package Version
@@ -42,8 +42,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: build/net.intellivoid.proclib.ppm
-          name: "ProcLibb v${{ env.package_version }}"
+          name: "ProcLib v${{ env.package_version }}"
           tag_name: "v${{ env.package_version }}"
-          body: "Compiled PPM package for ProcLibb, version ${{ env.package_version }}"
+          body: "Compiled PPM package for ProcLib, version ${{ env.package_version }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
