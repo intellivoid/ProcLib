@@ -1,8 +1,8 @@
 {
     "package": {
         "package_name": "net.intellivoid.proclib",
-        "name": "ProcLibb",
-        "version": "1.0.0.0",
+        "name": "ProcLib",
+        "version": "1.0.0.1",
         "author": "Zi Xing Narrakas",
         "organization": "Intellivoid",
         "description": "Manages executing processes",
