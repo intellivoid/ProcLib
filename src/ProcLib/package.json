@@ -1,0 +1,107 @@
+{
+    "package": {
+        "package_name": "net.intellivoid.proclib",
+        "name": "ProcLibb",
+        "version": "1.0.0.0",
+        "author": "Zi Xing Narrakas",
+        "organization": "Intellivoid",
+        "description": "Manages executing processes",
+        "url": "https://github.com/intellivoid/ProcLib",
+        "dependencies": [],
+        "configuration": {
+            "autoload_method": "generated_spl",
+            "main": null,
+            "post_installation": [],
+            "pre_installation": []
+        }
+    },
+    "components": [
+        {
+            "required": true,
+            "file": "Abstracts/AbstractPipes.php"
+        },
+        {
+            "required": true,
+            "file": "Abstracts/Types/IterationType.php"
+        },
+        {
+            "required": true,
+            "file": "Abstracts/Types/StdType.php"
+        },
+        {
+            "required": true,
+            "file": "Abstracts/Types/StreamType.php"
+        },
+        {
+            "required": true,
+            "file": "Abstracts/Types/StatusType.php"
+        },
+        {
+            "required": true,
+            "file": "PhpProcess.php"
+        },
+        {
+            "required": true,
+            "file": "Exceptions/RuntimeException.php"
+        },
+        {
+            "required": true,
+            "file": "Exceptions/ProcessTimedOutException.php"
+        },
+        {
+            "required": true,
+            "file": "Exceptions/ProcessSignaledException.php"
+        },
+        {
+            "required": true,
+            "file": "Exceptions/ProcessFailedException.php"
+        },
+        {
+            "required": true,
+            "file": "Exceptions/LogicException.php"
+        },
+        {
+            "required": true,
+            "file": "Exceptions/InvalidArgumentException.php"
+        },
+        {
+            "required": true,
+            "file": "Utilities/ExecutableFinder.php"
+        },
+        {
+            "required": true,
+            "file": "Utilities/ProcessUtils.php"
+        },
+        {
+            "required": true,
+            "file": "Utilities/PhpExecutableFinder.php"
+        },
+        {
+            "required": true,
+            "file": "Utilities/InputStream.php"
+        },
+        {
+            "required": true,
+            "file": "Interfaces/ExceptionInterface.php"
+        },
+        {
+            "required": true,
+            "file": "Interfaces/PipesInterface.php"
+        },
+        {
+            "required": true,
+            "file": "Process.php"
+        },
+        {
+            "required": true,
+            "file": "Objects/WindowsPipes.php"
+        },
+        {
+            "required": true,
+            "file": "Objects/UnixPipes.php"
+        }
+    ],
+    "files": [
+        "package.json"
+    ]
+}
